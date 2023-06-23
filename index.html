@@ -7,68 +7,19 @@
     <title>這裡大家都愛酪梨</title>
     <script src="https://code.jquery.com/jquery-3.7.0.js"
         integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
-    <style type="text/css">
-        body{display: flex;
-        flex-wrap: wrap;}
-        #fade,
-        #fade1,
-        #fade2,
-        #fade3,
-        #fade4 #fade5,
-        #fade6 {
-            display: none;
-            position: absolute;
-            top: 0%;
-            left: 0%;
-            width: 100%;
-            height: 100%;
-            background-color: black;
-            z-index: 1001;
-            -moz-opacity: 0.8;
-            opacity: .80;
-            filter: alpha(opacity=80);
-            animation: fadein 3s;
-        }
+    <link rel="stylesheet" href="./style.css">
 
-        @keyframes fadein {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 0.8;
-            }
-        }
-
-        img {
-            width: 350px;
-            height: 400px;
-        }
-
-        #light,
-        #light1,
-        #light2,
-        #light3,
-        #light4,
-        #light6,
-        #light5 {
-            display: none;
-            position: absolute;
-            top: 25%;
-            left: 25%;
-            width: 50%;
-            height: 50%;
-            padding: 16px;
-            border: 3px solid orange;
-            background-color: white;
-            z-index: 1002;
-            overflow: auto;
-            animation: fadein 3s;
-        }
-    </style>
     <script>
         $(document).ready(function () {
             var video = document.getElementsByTagName('video');
+            let current = './image/icon2.png';
+            $('#sop').click(function () {
+                $('#box').slideToggle();
+                $('.img2').attr('src', current);
+                // 在這裡寫下要執行的程式碼
+                current = current === './image/icon1.png' ? './image/icon2.png' : './image/icon1.png';
+
+            });
             $('#linkbt, #closebt').click(function () {
                 $('#light').toggle();
                 $('#fade').toggle();
@@ -105,90 +56,88 @@
                 }
             });
         });
+
     </script>
 </head>
 
 <body>
-    <style>
-        video {
-            width: 700px;
-            height: 400px;
-        }
-
-        .gggg {
-            display: flex;
-            flex-direction: column;
-        }
-    </style>
-
-    <a href="#" id="linkbt"><img src="./白子1.png" alt="">
-    </a>
-    <div id="light">
-        <div class="gggg">
-            <a href="javascript:void(0)" id="closebt">關閉視窗
-            </a>
-            <video src="./123.mp4" type="video/mp4" controls></video>
-            <h2>工地幫招生中，一個禮拜只要工作三天</h2>
+    <div id="boxset">
+        <div id="sop">
+            <img src="./image/FrrCgc_agAAAjhF 1.png" alt="">
+            <p>每日放鬆好心情</p>
+            <img class="img2" src="./image/icon1.png" alt="">
         </div>
     </div>
-    <div id="fade">
-    </div>
-    <a href="javascript:void(0)" id="linkbt1"><img src="./下載.jfif" alt=""></a>
-    <div id="light1">
-        <div class="gggg">
-            <a href="javascript:void(0)" id="closebt1">關閉視窗
-            </a>
-            <video src="./bitch_gotchu_20210828_14.mp4" type="video/mp4" controls></video>
-            <h2>與手機交合未嘗不是種選擇</h2>
+    <div id="box">
+        <a href="#" id="linkbt"><img src="./白子1.png" alt="">
+        </a>
+        <div id="light">
+            <div class="gggg">
+                <a href="javascript:void(0)" id="closebt">關閉視窗
+                </a>
+                <video src="./123.mp4" type="video/mp4" controls></video>
+                <h2>工地幫招生中，一個禮拜只要工作三天</h2>
+            </div>
+        </div>
+        <div id="fade">
+        </div>
+        <a href="javascript:void(0)" id="linkbt1"><img src="./下載.jfif" alt=""></a>
+        <div id="light1">
+            <div class="gggg">
+                <a href="javascript:void(0)" id="closebt1">關閉視窗
+                </a>
+                <video src="./bitch_gotchu_20210828_14.mp4" type="video/mp4" controls></video>
+                <h2>與手機交合未嘗不是種選擇</h2>
+            </div>
+        </div>
+        <div id="fade1">
+        </div>
+        <a href="javascript:void(0)" id="linkbt2"><img src="./image.png" alt=""></a>
+        <div id="light2">
+            <div class="gggg">
+                <a href="javascript:void(0)" id="closebt2">關閉視窗
+                </a>
+                <video src="./別再傳偽娘照給我了！！！！！！ (720p).mp4" type="video/mp4" controls></video>
+                <h2>恭喜你你現在是gay了 他是男的</h2>
+            </div>
+        </div>
+        <div id="fade2">
+        </div>
+        <a href="javascript:void(0)" id="linkbt3"><img src="./johann-siemens-EPy0gBJzzZU-unsplash.jpg" alt=""></a>
+        <div id="light3">
+            <div class="gggg">
+                <a href="javascript:void(0)" id="closebt3">關閉視窗
+                </a>
+                <video src="./video0 (1).mov" type="video/mp4" controls></video>
+                <h2>蔚藍檔案:小魚老師</h2>
+            </div>
+        </div>
+        <div id="fade3">
+        </div>
+        <a href="javascript:void(0)" id="linkbt4"><img src="./a9d3fd1f4134970a304e249b0e99c6c8a786c917f77e.jfif"
+                alt=""></a>
+        <div id="light4">
+            <div class="gggg">
+                <a href="javascript:void(0)" id="closebt4">關閉視窗
+                </a>
+                <video src="./351120669_184824624538562_5377859636215910443_n.mp4" type="video/mp4" controls></video>
+                <h2>星野愛你現在過得還好嗎?</h2>
+            </div>
+        </div>
+        <div id="fade4">
+        </div>
+        <a href="javascript:void(0)" id="linkbt5"><img src="./image2.png" alt=""></a>
+        <div id="light5">
+            <div class="gggg">
+                <a href="javascript:void(0)" id="closebt5">關閉視窗
+                </a>
+                <video src="./貓.mp4" type="video/mp4" controls></video>
+                <h2></h2>
+            </div>
+        </div>
+        <div id="fade5">
         </div>
     </div>
-    <div id="fade1">
-    </div>
-    <a href="javascript:void(0)" id="linkbt2"><img src="./image.png" alt=""></a>
-    <div id="light2">
-        <div class="gggg">
-            <a href="javascript:void(0)" id="closebt2">關閉視窗
-            </a>
-            <video src="./別再傳偽娘照給我了！！！！！！ (720p).mp4" type="video/mp4" controls></video>
-            <h2>恭喜你你現在是gay了 他是男的</h2>
-        </div>
-    </div>
-    <div id="fade2">
-    </div>
-    <a href="javascript:void(0)" id="linkbt3"><img src="./johann-siemens-EPy0gBJzzZU-unsplash.jpg" alt=""></a>
-    <div id="light3">
-        <div class="gggg">
-            <a href="javascript:void(0)" id="closebt3">關閉視窗
-            </a>
-            <video src="./video0 (1).mov" type="video/mp4" controls></video>
-            <h2>蔚藍檔案:小魚老師</h2>
-        </div>
-    </div>
-    <div id="fade3">
-    </div>
-    <a href="javascript:void(0)" id="linkbt4"><img src="./a9d3fd1f4134970a304e249b0e99c6c8a786c917f77e.jfif" alt=""></a>
-    <div id="light4">
-        <div class="gggg">
-            <a href="javascript:void(0)" id="closebt4">關閉視窗
-            </a>
-            <video src="./351120669_184824624538562_5377859636215910443_n.mp4" type="video/mp4" controls></video>
-            <h2>星野愛你現在過得還好嗎?</h2>
-        </div>
-    </div>
-    <div id="fade4">
-    </div>
-    <a href="javascript:void(0)" id="linkbt5"><img src="./image2.png" alt=""></a>
-    <div id="light5">
-        <div class="gggg">
-            <a href="javascript:void(0)" id="closebt5">關閉視窗
-            </a>
-            <video src="./貓.mp4" type="video/mp4" controls></video>
-            <h2></h2>
-        </div>
-    </div>
-    <div id="fade5">
-    </div>
-
 </body>
 
 </html>
