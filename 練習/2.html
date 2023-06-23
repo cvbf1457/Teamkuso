@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=" utf-8">
+    <meta name="author" content="http://www.softwhy.com/" />
+    <title>螞蟻部落</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <style type="text/css">
+        #fade,
+        #fade1,
+        #fade2,
+        #fade3 ,#fade4{
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 1001;
+            -moz-opacity: 0.8;
+            opacity: .80;
+            filter: alpha(opacity=80);
+            animation: fadein 3s;
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 0.8;
+            }
+        }
+
+        img {
+            width: 350px;
+            height: 400px;
+        }
+
+        #light,
+        #light1,
+        #light2,
+        #light3 ,#light4{
+            display: none;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            width: 50%;
+            height: 50%;
+            padding: 16px;
+            border: 3px solid orange;
+            background-color: white;
+            z-index: 1002;
+            overflow: auto;
+            animation: fadein 3s;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            var video = document.getElementsByTagName('video');
+            $('#linkbt, #closebt').click(function () {
+                $('#light').toggle();
+                $('#fade').toggle();
+            });
+            $('#linkbt1, #closebt1').click(function () {
+                $('#light1').toggle();
+                $('#fade1').toggle();
+            });
+            $('#linkbt2, #closebt2').click(function () {
+                $('#light2').toggle();
+                $('#fade2').toggle();
+            });
+            $('#linkbt3, #closebt3').click(function () {
+                $('#light3').toggle();
+                $('#fade3').toggle();
+            });
+            $('#linkbt4, #closebt4').click(function () {
+                $('#light4').toggle();
+                $('#fade4').toggle();
+            });
+            $('#closebt,#closebt2,#closebt3,#closebt1,#closebt4').click(function () {
+                if (!video.pause) {
+                    for (var i = 0; i < video.length; i++) {
+                        video[i].pause();
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <style>
+        video {
+            width: 700px;
+            height: 400px;
+        }
+
+        .gggg {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+
+    <a href="#" id="linkbt"><img src="./白子1.png" alt="">
+    </a>
+    <div id="light">
+        <div class="gggg">
+            <a href="javascript:void(0)" id="closebt">關閉視窗
+            </a>
+            <video src="./123.mp4" type="video/mp4" controls></video>
+            <h2>工地幫招生中，一個禮拜只要工作三天</h2>
+        </div>
+    </div>
+    <div id="fade">
+    </div>
+    <a href="javascript:void(0)" id="linkbt1"><img src="./下載.jfif" alt=""></a>
+    <div id="light1">
+        <div class="gggg">
+            <a href="javascript:void(0)" id="closebt1">關閉視窗
+            </a>
+            <video src="./bitch_gotchu_20210828_14.mp4" type="video/mp4" controls></video>
+        </div>
+    </div>
+    <div id="fade1">
+    </div>
+    <a href="javascript:void(0)" id="linkbt2"><img src="./image.png" alt=""></a>
+    <div id="light2">
+        <div class="gggg">
+            <a href="javascript:void(0)" id="closebt2">關閉視窗
+            </a>
+            <video src="./別再傳偽娘照給我了！！！！！！ (720p).mp4" type="video/mp4" controls></video>
+            <h2>恭喜你你現在是gay了 他是男的</h2>
+        </div>
+    </div>
+    <div id="fade2">
+    </div>
+    <a href="javascript:void(0)" id="linkbt3"><img src="./johann-siemens-EPy0gBJzzZU-unsplash.jpg" alt=""></a>
+    <div id="light3">
+        <div class="gggg">
+            <a href="javascript:void(0)" id="closebt3">關閉視窗
+            </a>
+            <video src="./video0 (1).mov" type="video/mp4" controls></video>
+            <h2>蔚藍檔案:小魚老師</h2>
+        </div>
+    </div>
+    <div id="fade3">
+    </div>
+    <a href="javascript:void(0)" id="linkbt4"><img src="./a9d3fd1f4134970a304e249b0e99c6c8a786c917f77e.jfif" alt=""></a>
+    <div id="light4">
+        <div class="gggg">
+            <a href="javascript:void(0)" id="closebt4">關閉視窗
+            </a>
+            <video src="./351120669_184824624538562_5377859636215910443_n.mp4" type="video/mp4" controls></video>
+            <h2>星野愛你現在過得還好嗎?</h2>
+        </div>
+    </div>
+    <div id="fade4">
+    </div>
+</body>
+
+</html>

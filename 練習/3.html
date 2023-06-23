@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=" utf-8">
+    <meta name="author" content="http://www.softwhy.com/" />
+    <title>螞蟻部落</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <style type="text/css">
+        #fade,
+        #fade1,
+        #fade2 {
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 1001;
+            -moz-opacity: 0.8;
+            opacity: .80;
+            filter: alpha(opacity=80);
+            animation: fadein 3s;
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 0.8;
+            }
+        }
+
+        img {
+            width: 400px;
+            height: 400px;
+        }
+
+        #light,
+        #light1,
+        #light2 {
+            display: none;
+            position: absolute;
+            top: 25%;
+            left: 25%;
+            width: 50%;
+            height: 50%;
+            padding: 16px;
+            border: 3px solid orange;
+            background-color: white;
+            z-index: 1002;
+            overflow: auto;
+            animation: fadein 3s;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('#light').click(function () {
+                $('#light').toggle();
+                $('#fade').toggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <style>
+        video {
+            width: 50%;
+            height: 50%;
+        }
+
+        .gggg {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+    <a href="javascript:void(0)" id="linkbt"><img src="./白子1.png" alt=""></a>
+    <div id="light">
+        <div class="gggg">
+            <a href="javascript:void(0)" id="closebt">關閉視窗
+            </a>
+            <video src="./bitch_gotchu_20210828_14.mp4" type="video/mp4" controls></video>
+        </div>
+    </div>
+    <div id="fade">
+    </div>
+
+    <a href="javascript:void(0)" id="linkbt"><img src="./白子1.png" alt=""></a>
+    <div id="light">
+        <div class="gggg">
+            <a href="javascript:void(0)" id="closebt">關閉視窗
+            </a>
+            <video src="./4510392c17c7401fb0fc924e4fe2219f.mov" type="video/mp4" controls></video>
+        </div>
+    </div>
+    <div id="fade">
+    </div>
+
+    <a href="javascript:void(0)" id="linkbt"><img src="./白子1.png" alt=""></a>
+    <div id="light">
+        <div class="gggg">
+            <a href="javascript:void(0)" id="closebt">關閉視窗
+            </a>
+            <video src="./123.mp4" type="video/mp4" controls></video>
+        </div>
+    </div>
+    <div id="fade">
+    </div>
+</body>
+
+</html>
