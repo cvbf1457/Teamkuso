@@ -8,10 +8,14 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js"
         integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
     <style type="text/css">
+        body{display: flex;
+        flex-wrap: wrap;}
         #fade,
         #fade1,
         #fade2,
-        #fade3 ,#fade4{
+        #fade3,
+        #fade4 #fade5,
+        #fade6 {
             display: none;
             position: absolute;
             top: 0%;
@@ -44,7 +48,10 @@
         #light,
         #light1,
         #light2,
-        #light3 ,#light4{
+        #light3,
+        #light4,
+        #light6,
+        #light5 {
             display: none;
             position: absolute;
             top: 25%;
@@ -82,7 +89,15 @@
                 $('#light4').toggle();
                 $('#fade4').toggle();
             });
-            $('#closebt,#closebt2,#closebt3,#closebt1,#closebt4').click(function () {
+            $('#linkbt5, #closebt5').click(function () {
+                $('#light5').toggle();
+                $('#fade5').toggle();
+            });
+            $('#linkbt6, #closebt6').click(function () {
+                $('#light6').toggle();
+                $('#fade6').toggle();
+            });
+            $('#closebt,#closebt2,#closebt3,#closebt1,#closebt4,#closebt5').click(function () {
                 if (!video.pause) {
                     for (var i = 0; i < video.length; i++) {
                         video[i].pause();
@@ -162,6 +177,18 @@
     </div>
     <div id="fade4">
     </div>
+    <a href="javascript:void(0)" id="linkbt5"><img src="./image2.png" alt=""></a>
+    <div id="light5">
+        <div class="gggg">
+            <a href="javascript:void(0)" id="closebt5">關閉視窗
+            </a>
+            <video src="./貓.mp4" type="video/mp4" controls></video>
+            <h2></h2>
+        </div>
+    </div>
+    <div id="fade5">
+    </div>
+
 </body>
 
 </html>
