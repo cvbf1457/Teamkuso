@@ -80,10 +80,11 @@ video {
 }
 
 #box {
-    display: none;
+    margin-top: 5%;
+    display: flex;
     flex-wrap: wrap;
-    margin-top: 3%;
-
+    justify-content: center;
+    
 }
 
 #boxset {
